@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-graphite-950 text-slate-100 font-body;
+  }
+  h1, h2, h3 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-graphite-900 border border-graphite-700 rounded-xl;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-lg bg-signal px-4 py-2 text-sm font-medium text-white
+           hover:bg-signal-soft transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 rounded-lg border border-graphite-600 bg-graphite-800 px-4 py-2
+           text-sm font-medium text-slate-200 hover:border-signal hover:text-white transition-colors;
+  }
+  .btn-danger {
+    @apply inline-flex items-center gap-2 rounded-lg border border-wire-red/40 bg-wire-red/10 px-3 py-1.5
+           text-xs font-medium text-wire-red hover:bg-wire-red/20 transition-colors;
+  }
+  .input {
+    @apply w-full rounded-lg border border-graphite-600 bg-graphite-800 px-3 py-2 text-sm text-slate-100
+           placeholder:text-graphite-500 focus:border-signal focus:outline-none focus:ring-1 focus:ring-signal;
+  }
+  .label {
+    @apply block text-xs font-medium uppercase tracking-wide text-graphite-500 mb-1.5;
+  }
+}
+
+/* Signature "signal pulse" divider used sparingly on the dashboard header */
+.pulse-line {
+  height: 1px;
+  background: repeating-linear-gradient(
+    90deg,
+    theme('colors.signal.DEFAULT') 0,
+    theme('colors.signal.DEFAULT') 6px,
+    transparent 6px,
+    transparent 12px
+  );
+  background-size: 24px 1px;
+  animation: pulse-scroll 1.6s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes pulse-scroll {
+  from { background-position: 0 0; }
+  to { background-position: 24px 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-line { animation: none; }
+}
