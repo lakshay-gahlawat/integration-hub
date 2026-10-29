@@ -12,7 +12,7 @@
 [![Redis](https://img.shields.io/badge/Redis-Celery-DC382D?logo=redis&logoColor=white)](https://redis.io/)
 [![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 
-[**🚀 Live Frontend**](https://integration-hub-frontend-g4qf.onrender.com) &nbsp;·&nbsp; [**⚙️ Live API Docs**](https://integration-hub-api-sbdz.onrender.com/docs) &nbsp;·&nbsp; [**📦 Source**](https://github.com/lakshay-gahlawat/integration-hub)
+[**🚀 Live Frontend**](https://integration-hub-frontend-g4qf.onrender.com) &nbsp;·&nbsp; [**⚙️ Live API Docs**](https://integration-hub-69da.onrender.com/docs) &nbsp;·&nbsp; [**📦 Source**](https://github.com/lakshay-gahlawat/integration-hub)
 
 
 </div>
